@@ -198,18 +198,23 @@
 
     <!-- Custome JavaScript -->
     <script>
-        /*======= banner invite job button js ========*/
-        var inviteButton = $('g.invite-btn');
-        var dropshadow = $("#filter-11 feOffset");
-        inviteButton.on('click', function(e){
-            var url = "https://www.upwork.com/o/companies/~01c7a3a414e5d04286";
-            window.open(url, '_blank');
-        });
-        inviteButton.on('mouseenter', function(e){
-            dropshadow.attr({dy: '4', dx: '1'});
-        });
-        inviteButton.on('mouseleave', function(e){
-            dropshadow.attr({dy: '0', dx: '0'});
+        jQuery(document).ready( function($) {
+            'use strict';
+
+            /*======= banner invite job button js ========*/
+            var inviteButton = $('g.invite-btn');
+            var dropshadow = $("#filter-11 feOffset");
+            inviteButton.on('click', function(e){
+                var url = "https://www.upwork.com/o/companies/~01c7a3a414e5d04286";
+                window.open(url, '_blank');
+            });
+            inviteButton.on('mouseenter', function(e){
+                dropshadow.attr({dy: '4', dx: '1'});
+            });
+            inviteButton.on('mouseleave', function(e){
+                dropshadow.attr({dy: '0', dx: '0'});
+            });
+
         });
     </script>
 
